@@ -56,11 +56,11 @@ class Employee(Person):
             raise ValueError('Weekly hours must be numerical')
 
 
-    def calculate_overtime_pay(self, __current_salary, overtime_hours, _weekly_hours):
+    def calculate_overtime_pay(self, overtime_hours):
         overtime_pay = (self.__current_salary/52/self._weekly_hours)*(1.5 * overtime_hours)
         return f"Overtime pay: £{overtime_pay:.2f}"
         # (hourly rate) * (1.5 x overtime hours)
 
-    def give_raise(self, __current_salary, raise_percentage):
-        self.__current_salary = self.__current_salary + (self.__current_salary * raise_percentage)
+    def give_raise(self, raise_percentage):
+        self.__current_salary += self.__current_salary * raise_percentage
         return f"The new salary is £{self.__current_salary:.2f}"

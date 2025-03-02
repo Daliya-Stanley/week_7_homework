@@ -1,9 +1,9 @@
 class Person:
     def __init__(self, firstname, lastname, age, gender):
-        self.__firstname = firstname.capitilize()
-        self.__lastname = lastname.capitilize()
+        self.__firstname = firstname
+        self.__lastname = lastname
         self.__age = int(age)
-        self.__gender = gender.upper()
+        self.__gender = gender
        # self.__address = address
 
     def get_firstname (self):

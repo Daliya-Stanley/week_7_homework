@@ -2,9 +2,9 @@ from account_hierarchy.account import Account
 from account_hierarchy.saving_account import SavingAccount
 
 try:
-    ivon = SavingAccount(20000, 'Ivon', 'Kruse', 0.0003)
+    ivon = SavingAccount(20000, 'Ivon', 'Kruse', 0.03)
 
-    balance_after_interest = ivon.add_annual_interest()
+    balance_after_interest = ivon.add_fd_annual_interest()
     print(balance_after_interest)
 
     balance_after_deposit = ivon.deposit(30)

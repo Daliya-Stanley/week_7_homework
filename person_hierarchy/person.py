@@ -6,6 +6,8 @@ class Person:
         self.__gender = gender
        # self.__address = address
 
+    # Class Person is created and the
+
     def get_firstname (self):
         return self.__firstname
 

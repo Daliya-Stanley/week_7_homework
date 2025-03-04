@@ -1,4 +1,5 @@
 from account_hierarchy.insufficient_funds import InsufficientFundsException
+# import InsufficientFundsExceptionClass
 
 class Account:
     # this is a CONSTRUCTOR
@@ -54,4 +55,5 @@ class Account:
             # return InsufficientFundsException.error_message(self.firstname)
             x = InsufficientFundsException('This is an error')
             message = x.error_message()
+            # .error_message() method from insufficient funds class
             return message

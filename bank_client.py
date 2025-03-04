@@ -1,12 +1,15 @@
 from account_hierarchy.account import Account
 from account_hierarchy.saving_account import SavingAccount
 
+# try block
 try:
     ivon = SavingAccount(20000, 'Ivon', 'Kruse', 0.03)
 
-    balance_after_interest = ivon.add_fd_annual_interest()
-    print(balance_after_interest)
+    # using new method from SavingAccount class - calculating annual interest on fixed deposit
+    calculated_interest = ivon.add_fd_annual_interest()
+    print(calculated_interest)
 
+    # deposit and withdraw inherited from Account class
     balance_after_deposit = ivon.deposit(30)
     print(ivon)
 

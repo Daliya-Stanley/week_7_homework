@@ -64,3 +64,9 @@ class Employee(Person):
     def give_raise(self, raise_percentage):
         self.__current_salary += self.__current_salary * raise_percentage
         return f"The new salary is £{self.__current_salary:.2f}"
+
+
+
+    def make_purchase(self, item, amount):
+        self._purchase_history.append((item, amount))
+        return f"{self._name} purchased {item} for £{amount}."
